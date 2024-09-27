@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Chaptha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+background-image: url('https://plus.unsplash.com/premium_photo-1670168827639-033c8baa538e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJpY2slMjB0ZXh0dXJlfGVufDB8fDB8fHww'); /* Replace with your image URL */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            
+        }
+        .title {
+            font-size: 3vw;
+            margin: 20px 0;
+            position: relative;
+            z-index: 2; /* Ensure title is above the background */
+            color: black;
+        }
+        .title a {
+            text-decoration: none;
+            color: inherit; /* Use inherited color from title */
+        }
+        .title a:hover {
+            color: #0073e6;
+        }
+        .header {
+            margin: 10px 0;
+            z-index: 2; /* Ensure header is above the background */
+        }
+        .header a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.5vw;
+        }
+        .header a:hover {
+            color: #0073e6;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100vw;
+            height: calc(100vh - 150px); /* Adjusted to accommodate title and links */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the container */
+            position: relative;
+            grid-gap: 20px;
+            z-index: 1; /* Ensure the container is above the background */
+background-image: url('https://plus.unsplash.com/premium_photo-1670168827639-033c8baa538e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJpY2slMjB0ZXh0dXJlfGVufDB8fDB8fHww'); /* Replace with your image URL */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        .item {
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2vw;
+        }
+        .about-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid black;
+            padding: 2vw 4vw;
+            font-size: 2.5vw;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 3; /* Ensure the about box is above everything */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title with hyperlink -->
+    <div class="title">
+        <a href="#home">Project Chaptha</a>
+    </div>
+
+    <!-- Header with hyperlinks -->
+    <div class="header">
+        <a href="#about-us"><u>About Us</u></a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#feedback">Feedback</a>
+    </div>
+
+    <!-- Main container with images and text -->
+    <div class="container">
+        <div class="item" id="about-us">Image 1</div>
+        <div class="item" id="volunteer">Image 2</div>
+        <div class="item" id="syllabus">Image 3</div>
+        <div class="item" id="feedback">Image 4</div>
+        <div class="item">Image 5</div>
+        <div class="item">Image 6</div>
+        
+        <!-- About box overlapping the center -->
+        <div class="about-box">About u guys</div>
+    </div>
+
+</body>
+</html>
